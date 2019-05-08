@@ -1,0 +1,10 @@
+atrix:
+  include:    
+    - language: c  
+      sudo: false # only for faster builds  
+      compiler:
+        - clang
+        - gcc
+      script:  
+        - gcc -o test1 test1.c 
+        - ./test1
